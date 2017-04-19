@@ -1,0 +1,844 @@
+  /*WELCOME PAGE CSS*/
+#welcome-title{
+color:#000033;
+}
+
+#welcome-titleone{
+  font-family: 'Raleway', sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  margin-top: -10%;
+}
+#welcome-titletwo{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size:45px;
+  margin-top: -17%;
+}
+#message p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+/*END of WELCOME PAGE CSS*/
+/*SIDE NAVBAR*/
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3%;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+#main {
+    transition: margin-left .5s;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#sidenav-ul{
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+#close{
+  font-size: 25px;
+  position: absolute;
+  margin-left: 60%;
+  margin-top:15%;
+}
+#close:hover{
+  border-style: none none solid none;
+  border-width: 3px;
+}
+#sidenav-row{
+  border-style: solid none solid none;
+  border-width: 2px;
+  margin-right: 10%;
+  margin-top: 50%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#sidenav-row p{
+  font-size: 25px;
+  position: relative;
+  font-weight: 900;
+}
+#sidenav-row a{
+  font-size: 20px;
+  position: relative;
+  padding: 2%;
+  margin-left: 2%;
+}
+#sidenav-row a:hover{
+  color: black;
+  border-style: none none none solid;
+  border-width: 4px;
+  text-decoration: none;
+}
+#logout{
+  position: relative;
+  margin-top: 20%;
+  margin-left: 30%;
+}
+/*END OF SIDEBAR*/
+/*DASHAPP*/
+#dashapp-nav{
+  background-color: transparent;
+}
+#navbar-menu{
+  border-style:none solid none none;
+  border-width: 1px;
+  cursor: pointer;
+  padding:1%;
+}
+#menu-column{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 14.5px;
+  color: black;
+}
+#navbar-logo{
+  padding:1%;
+  position: absolute;
+  margin-left: 45%;
+}
+#navbar-logo a{
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+#navbar-logo a::before, #navbar-logo a::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+}
+#navbar-logo a{
+  -webkit-transition: color 6s;
+  transition: color 0.25s;
+}
+#navbar-logo a::before, #navbar-logo a::after {
+  border: 4px solid transparent;
+  width: 0;
+  height: 0;
+}
+#navbar-logo a::before {
+  top: 0;
+  left: 0;
+}
+#navbar-logo a::after {
+  bottom: 0;
+  right: 0;
+}
+#navbar-logo a:hover {
+  color: black;
+}
+#navbar-logo a:hover::before, #navbar-logo a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+#navbar-logo  a:hover::before {
+  border-top-color: black;
+  border-right-color: black;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+#navbar-logo  a:hover::after {
+  border-bottom-color: black;
+  border-left-color: black;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+#navbar-name{
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  padding-top: 0.5%;
+  padding-right: 5%;
+}
+#navbar-name strong{
+  font-weight: 900;
+}
+#navbar-name p{
+  color: black;
+}
+
+/*END of DASHAPP*/
+
+/*APP LAYOUT CSS*/
+#app-brand{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 20px;
+  background-color: #000033;
+}
+#app-links a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: black;
+}
+/*END of APP LAYOUT CSS*/
+
+#app{
+  background-color: white;
+  color:black;
+}
+a.btn:hover {
+  border-style: solid;
+  border-color:#000033;
+  border-width: 1.5px;
+  background-color: white;
+}
+/*PROFESSOR AND STUDENT DASHBOARD BLADES*/
+#dashboard-container{
+  text-align: center;
+}
+#row{
+  padding-left: 2%;
+}
+#dashboard-row-header{
+  font-family: 'Raleway', sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+}
+#widget{
+  background-color: white;
+  text-align: center;
+}
+#widget ul a{
+  margin-left:-31px;
+  color: #000033;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+/*END of PROFESSOR AND STUDENT DASHBOARD BLADES*/
+/*SUBJECT VIEW PAGE*/
+
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4);
+}
+
+#course-name{
+  background-color:#07224c;
+  color: white;
+  padding-left: 3.2%;
+}
+#course-name h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+#main-row{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #07224c;
+}
+
+#announcements-row1{
+  border-style: none none none solid;
+  border-width: 12px;
+  border-color: #07224c;
+  padding:2%;
+  margin-top: 1.5%;
+  margin-left: 0%;
+  margin-right: 2%;
+  background-color: #e2e0e0;
+}
+#announcements-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  color:black;
+}
+#announcements-row2{
+  height: 150px;
+  overflow-y: auto;
+  margin-left: 0%;
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+#announcements-row2-content{
+  margin-right: 0%;
+  padding-left: 8%;
+  padding-top: 3%;
+}
+#announcements-row2-content1{
+  font-family: 'Raleway', sans-serif;
+}
+#announcements-row2-content2{
+  font-family: 'Raleway', sans-serif;
+}
+#announce-add{
+  background-color: #07224c;
+  border-color: #07224c;
+  margin-left: 80%;
+}
+#announce-add:hover{
+  border-color: black;
+  border-width: 2px;
+}
+#announce-plus{
+  font-weight:bolder;
+  font-size: 12px;
+  color:white;
+}
+#announce-status{
+  background-color: transparent;
+  border-style: none;
+}
+#announce-upload{
+  font-weight:normal;
+  font-size: 20px;
+  color:orange;
+}
+#announce-edit{
+  background-color: transparent;
+  border-style: none;
+}
+#announce-pencil{
+  font-weight:normal;
+  font-size: 20px;
+  color:#080670;
+}
+#announce-deactivate{
+  background-color: transparent;
+  border-style: none;
+}
+#announce-remove{
+  font-weight:normal;
+  font-size: 20px;
+  color:#a51010;
+}
+
+#modules-row1{
+  border-style: none none none solid;
+  border-width: 12px;
+  border-color: #07224c;
+  padding:2%;
+  margin-top: 1.5%;
+  margin-left: 0%;
+  margin-right: 2%;
+  background-color: #e2e0e0;
+}
+#modules-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  color: black;
+}
+#modules-row2{
+  height: 150px;
+  overflow-y: auto;
+  margin-left: 0%;
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+#modules-row2-content{
+  margin-right: 0%;
+  padding-left: 8%;
+  padding-top: 3%;
+}
+
+#modules-row2-content1{
+  font-family: 'Raleway', sans-serif;
+}
+#module-add{
+  background-color: #07224c;
+  border-color: #07224c;
+  margin-left: 80%;
+}
+#module-add:hover{
+  border-color: black;
+  border-width: 2px;
+}
+#module-plus{
+  font-weight:bolder;
+  font-size: 12px;
+  color:white;
+}
+#module-download{
+  background-color: transparent;
+  border-style: none;
+}
+#module-save{
+  font-weight:normal;
+  font-size: 20px;
+  color:green;
+}
+#module-deactivate{
+  background-color: transparent;
+  border-style: none;
+}
+#module-remove{
+  font-weight:normal;
+  font-size: 20px;
+  color:#a51010;
+}
+
+#exams-row1{
+  border-style: none none none solid;
+  border-width: 12px;
+  border-color: #07224c;
+  padding:2%;
+  margin-top: 1.5%;
+  margin-left: 0%;
+  margin-right: 2%;
+  background-color: #e2e0e0;
+}
+#exams-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  color: black;
+}
+#exams-row2{
+  height: 150px;
+  overflow-y: auto;
+  margin-left: 0%;
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+#exams-row2-content{
+  margin-right: 0%;
+  padding-left: 8%;
+  padding-top: 3%;
+}
+#exams-row2-content1{
+font-family: 'Raleway', sans-serif;
+}
+
+#exam-add{
+  background-color: #07224c;
+  border-color: #07224c;
+  margin-left: 80%;
+}
+#exam-add:hover{
+  border-color: black;
+  border-width: 2px;
+}
+#exam-plus{
+  font-weight:bolder;
+  font-size: 12px;
+  color:white;
+}
+#exam-status{
+  background-color: transparent;
+  border-style: none;
+}
+#exam-upload{
+  font-weight:normal;
+  font-size: 20px;
+  color:orange;
+}
+#exam-edit{
+  background-color: transparent;
+  border-style: none;
+}
+#exam-pencil{
+  font-weight:normal;
+  font-size: 20px;
+  color:#080670;
+}
+#exam-deactivate{
+  background-color: transparent;
+  border-style: none;
+}
+#exam-remove{
+  font-weight:normal;
+  font-size: 20px;
+  color:#a51010;
+}
+#exam-list{
+  font-weight:normal;
+  font-size: 20px;
+}
+#exam-question{
+  background-color: transparent;
+  border-style: none;
+}
+#quiz-results-row1{
+  border-style:none none none solid;
+  border-width: 12px;
+  border-color: #07224c;
+  padding:1.35%;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 0.8%;
+  background-color: #07224c;
+}
+#quiz-results-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+}
+#quiz-results-row2{
+  border-style:none solid solid solid;
+  border-width: 1px;
+  border-color: #07224c;
+  padding-top:4%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 1%;
+  margin-right: 2%;
+  height:260px;
+  overflow-y: auto;
+}
+#quiz-results-row2-content{
+  border-style:solid;
+  border-width: 2.5px;
+  border-color: #07224c;
+}
+#quiz-results-row2-content1{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#quiz-results-row2-content2{
+  padding-left: 0%;
+  padding-bottom: 0%;
+  margin-left: 0%;
+}
+#quiz-results-row2-content p{
+  font-family: 'Raleway', sans-serif;
+}
+#quiz-results-name{
+  color: white;
+  background-color: #07224c;
+}
+#cs-results-row1{
+  border-style:none none none solid;
+  border-width: 12px;
+  border-color: #07224c;
+  padding:1.35%;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 1%;
+  background-color: #07224c;
+}
+#cs-results-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  color: white;
+}
+#cs-results-row2{
+  border-style:none solid solid solid;
+  border-width: 1px;
+  border-color: #07224c;
+  padding-top:2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 1%;
+  margin-right: 2%;
+  height:250px;
+  overflow-y: auto;
+}
+#cs-results-row2-content1
+{
+  font-family: 'Raleway', sans-serif;
+  border-style:none solid none none;
+}
+#cs-results-row2-content2
+{
+  font-family: 'Raleway', sans-serif;
+}
+#cs-row3{
+  margin-top: 2%;
+}
+#cs-row3-1{
+    border-style:none solid none none;
+}
+#cs-row3-1 p{
+  font-family: 'Raleway', sans-serif;
+}
+#cs-row3-2 p{
+  font-family: 'Raleway', sans-serif;
+}
+#cs-row3-1 table{
+  font-family: 'Raleway', sans-serif;
+}
+#cs-row3-2 table{
+  font-family: 'Raleway', sans-serif;
+}
+
+#charts-row1{
+  border-style:solid;
+  border-width: 2.5px;
+  border-color: #07224c;
+  padding:1.35%;
+  margin-left: 0%;
+  margin-right: 0.5%;
+}
+#charts-row1 p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+#container-percentage-tracker{
+  font-family: 'Raleway', sans-serif;
+  margin: 0%;
+  height: 400px;
+}
+/*END of SUBJECT PAGE VIEW*/
+
+/*QUESTIO BUILDER*/
+#question-container{
+  background-color: white;
+}
+#qmain-row-col1{
+  background-color: #07224c;
+}
+#qmain-row-col1 h4{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+#qmain-row-col1 h2{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+#qmain-row-col2{
+  border-style: solid;
+  border-width: 3px;
+  border-color: #07224c;
+  margin-left: 60%;
+  margin-right:5%;
+}
+#qcol2-content1{
+  background-color: #07224c;
+  margin-left: 0%;
+  margin-right:0%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  padding-left: 4%;
+}
+#qcol2-content1 p{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+#qcol2-content2{
+  background-color: white;
+  margin-left: 0%;
+  margin-right:0%;
+  padding:4%;
+  font-family: 'Raleway', sans-serif;
+}
+#question-btn{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #07224c;
+  border-color: #07224c;
+}
+#qmain-row2-col1 h4{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+#panel-row{
+  font-family: 'Raleway', sans-serif;
+}
+#panel-head p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+}
+#panel-head button {
+  margin-top: -5%;
+}
+/*END of QUESTIO BUILDER*/
+/*QUIZ VIEW*/
+#quizview-row1{
+  border-style: solid;
+  margin-left: 0%;
+  margin-right:80%;
+  padding: 1%;
+}
+#quizview-row1 p{
+  font-family: 'Raleway', sans-serif;
+}
+#quizview-row2{
+
+}
+#quizview-row2-col1{
+
+}
+/*END of QUIZ VIEW*/
+/*VIEW RESULTS*/
+#results-container{
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+}
+#row1 {
+  margin: 1%;
+}
+#first-row1{
+  margin: 1%;
+  background-color:#07224c;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 30%;
+  text-align: center;
+}
+#first-row2{
+  margin: 1%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 30%;
+  padding:1%;
+}
+#first-row3{
+  margin: 5% 5% 1% 1%;
+  font-family: 'Raleway', sans-serif;
+}
+#first-row1 h4{
+  font-weight: 900;
+  color: white;
+}
+#first-row2 p{
+  font-weight: 900;
+  color: #07224c;
+}
+#first-row3-col1 h4{
+  font-size: 20px;
+  color:#017a09;
+  font-weight: 800;
+}
+#first-row3-col2 h4{
+  font-size: 20px;
+  color:#9e0303;
+  font-weight: 800;
+}
+#first-row3-col3 h4{
+  font-size: 20px;
+  color:black;
+  font-weight: 800;
+}
+#first-row3-col1 p{
+  font-size: 50px;
+  color:#017a09;
+  font-weight: 900;
+  margin-left: 11%;
+}
+#first-row3-col2 p{
+  font-size: 50px;
+  color:#9e0303;
+  font-weight: 900;
+  margin-left: 11%;
+}
+#first-row3-col3 p{
+  font-size: 50px;
+  color:black;
+  font-weight: 900;
+}
+#total-grade{
+  padding: 2% 5% 2% 10%;
+  height: 250px;
+  overflow-y: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+#TotalGrade{
+  font-family: 'Raleway', sans-serif;
+  width: 90%;
+  text-align: center;
+}
+#TotalGrade th{
+  border-style: solid;
+  text-align: center;
+  padding: 1% 0% 1% 0%;
+  color: black;
+}
+#TotalGrade td{
+  border-style: solid;
+  border-width: 2px;
+  padding: 1.5% 0% 1.5% 0%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  color: black;
+}
+#third-row1{
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+#third-row1 h4{
+  font-weight: 800;
+  color: black;
+}
+#third-row2{
+  border-style: none none solid none;
+  border-width: 3px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding:3%;
+  overflow-y: auto;
+}
+#panel-col1{
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+}
+#panel-col2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+}
+/*END of VIEW RESULTS*/
+#subjectside{
+  border-style:solid;
+  border-width: 3px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+#subjectpanel{
+  border-style:solid;
+  border-width: 3px;
+  border-radius: 15px;
+  margin-left: 30px;
+}
